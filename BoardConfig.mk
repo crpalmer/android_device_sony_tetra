@@ -1,9 +1,7 @@
 USE_CAMERA_STUB := true
 
-RECOVERY_VARIANT := twrp
-
 # inherit from the proprietary version
--include vendor/sony/tetratwrp/BoardConfigVendor.mk
+-include vendor/sony/tetra/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM := bcm_java
@@ -44,17 +42,5 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_7x16.h\"
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_RECOVERY_FSTAB := device/sony/tetratwrp/config/twrp.fstab
-
-
-TW_THEME := watch_mdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_NO_USB_STORAGE := true
-TW_BRIGHTNESS_PATH := /sys/class/backlight/lm3630a_leda/brightness
-TW_MAX_BRIGHTNESS := 255
-TW_EXCLUDE_SUPERSU := true
-
-
-
+TARGET_RECOVERY_FSTAB := device/sony/tetra/config/twrp.fstab

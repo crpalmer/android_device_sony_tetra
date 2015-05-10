@@ -26,11 +26,11 @@ PRODUCT_RELEASE_NAME := tetra
 $(call inherit-product, vendor/cm/config/common_mini_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/sony/tetratwrp/device.mk)
+$(call inherit-product, device/sony/tetra/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := tetratwrp
-PRODUCT_NAME := cm_tetratwrp
+PRODUCT_DEVICE := tetra
+PRODUCT_NAME := cm_tetra
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := SmartWatch 3
 PRODUCT_MANUFACTURER := Sony

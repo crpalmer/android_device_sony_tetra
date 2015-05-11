@@ -14,8 +14,13 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+# Ramdisk
+
+PRODUCT_PACKAGES += \
+	fstab.tetra \
+	init.tetra.rc \
+	init.tetra.usb.rc \
+	ueventd.tetra.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
